@@ -1,0 +1,39 @@
+<VirtualHost *:80>    
+    DocumentRoot "c:/wamp64/www/tiguan/public"
+    ServerName tiguan.vw
+    ServerAlias www.tiguan.vw
+    <Directory "c:/wamp64/www/tiguan/public/">
+        Options Indexes FollowSymLinks      
+        AllowOverride All
+        Order Deny,Allow
+        Allow from all      
+    </Directory>  
+</VirtualHost>
+
+### ip address host C:\Windows\System32\drivers\etc\hosts
+127.0.0.1   tiguan.vw
+::1
+
+-------------------------------------------------
+
+sudo gedit /etc/apache2/sites-available/000-default.conf
+
+#LoadModule rewrite_module modules/mod_rewrite.so
+
+-------------------------------------------------
+
+///////// cambiar los siguientes lineas en el archivo .env que se encuentra fuera de la aplicación
+
+APP_NAME=Laravel  /// nombre de la aplicación
+APP_ENV=production
+APP_KEY=base64:9t34ddagboKMniE4qW33O8dqrsG/Qs1rTMqsB2hyWt4=
+APP_DEBUG=false
+APP_LOG_LEVEL=debug
+APP_URL=http://localhost    //// url de la aplicación ya en producción
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tiguan   //// nombre de la base de datos
+DB_USERNAME=root     //// nombre del usuario
+DB_PASSWORD=root     //// contraseña

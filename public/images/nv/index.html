@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	
+  <style type="text/css">
+		.container {
+  position: relative;
+  margin-top: 50px;
+  width: 817px;
+  height: 570px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 550px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0);
+  background-image: url('NAVE102_ub1_borde.png');
+}
+
+/*
+img {
+  position: absolute;
+  width: 817px;
+  height: 570px;
+  left: 0;
+}
+*/
+
+.title {
+  position: absolute;
+  width: 817px;
+  left: 0;
+  top: 100px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 200px;
+  left:0;
+  top: 80px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: black;
+  border: solid 2px black;
+  z-index: 1;
+  background-image: url('NAVE102_ub1.png');
+}
+
+.container:hover .button {
+  opacity: 1;
+}
+
+	</style>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $( "#UB1_1" ).mouseover(function(){
+        $(this).attr("src", "UB1_recorte_1_borde_n.PNG");
+      });
+
+      $( "#UB1_1" ).mouseout(function(){
+        $(this).attr("src", "UB1_recorte_1.PNG");
+      });
+
+      $( "#UB1_2" ).mouseover(function(){
+        $(this).attr("src", "UB1_recorte_2_borde_n.PNG");
+      });
+
+      $( "#UB1_2" ).mouseout(function(){
+        $(this).attr("src", "UB1_recorte_2.PNG");
+      });
+
+      $( "#UB2_1" ).mouseover(function(){
+        $(this).attr("src", "UB2_recorte_1_borde_n.PNG");
+      });
+
+      $( "#UB2_1" ).mouseout(function(){
+        $(this).attr("src", "UB2_recorte_1.PNG");
+      });
+    });
+  </script>
+</head>
+<body>
+
+<!--
+<div class="container">
+  <img src="NAVE102.png" alt="" />
+  <div class="overlay"></div>
+</div>
+-->
+
+<div class="panel-body" style="background-color: black;">
+<table width="1059" height="594" style="background-color: white; border-radius: 10px;">
+  <tr>
+    <td height="177" colspan="2">
+      <a href="http://www.google.com"><img id="UB1_1" src="UB1_recorte_1.PNG" width="357" height="177" /></a>
+    </td>
+    <td width="129">&nbsp;</td>
+    <td colspan="2">
+      <img id="ANBAUTEILE_1" src="ANBAUTEILE_recorte_1.PNG" width="320" height="142" />
+    </td>
+    <td width="122">
+      <img id="FINISH_1" src="FINISH_1.PNG" width="39" height="159" />
+    </td>
+    <td width="231">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="221" colspan="2">
+      <img id="UB2_1" src="UB2_recorte_1.PNG" width="340" height="136" />
+    </td>
+    <td>
+      <img id="AUFBAU_2" src="AUFBAU_recorte_2.PNG" width="48" height="126" />
+    </td>
+    <td width="272" rowspan="2">
+      <img id="COSTADOS_1" src="COSTADOS_transparente_1.PNG" width="207" height="227" />
+      <img id="AUFBAU_1" src="AUFBAU_recorte_1.PNG" width="169" height="175" />
+    </td>
+    <td width="79">
+      <img id="ANBAUTEILE_2" src="ANBAUTEILE_recorte_2.png" width="70" height="164" />
+    </td>
+    <td>
+      <img id="FINISH_2" src="FINISH_2.PNG" width="43" height="206" />
+    </td>
+    <td>
+      <img id="SISTEMADETRANSPORTE_1" src="SISTEMADETRANSPORTE.png" width="201" height="217" />
+    </td>
+  </tr>
+  <tr>
+    <td width="324" height="193">&nbsp;</td>
+    <td width="69" height="193">
+      <img id="UB1_2" src="UB1_recorte_2.PNG" width="61" height="162" />
+    </td>
+    <td>
+      <img id="UB2_2" src="UB2_recorte_2.PNG" width="115" height="189" />
+    </td>
+    <td width="79">&nbsp;</td>
+    <td>
+      <img id="FINISH_3" src="FINISH_3.PNG" width="44" height="168" />
+    </td>
+    <td>
+      <img id="SISTEMADETRANSPORTEEXTERNO" src="SISTEMADETRANSPORTEEXTERNO.png" width="219" height="189" />
+    </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
